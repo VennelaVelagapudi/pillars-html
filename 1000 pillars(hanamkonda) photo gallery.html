@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #5f5a5a;
+    }
+
+    header {
+            background-color: #5f5a5a;
+            color: white;
+            padding: 20px 0 10px; /* Decreased bottom padding of the header */
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 25px; /* Decreased font size */
+            width: 100%; /* Set header width to 100% */
+        }
+
+    footer {
+            background-color: #5f5a5a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid white;
+            font-size: 18px; /* Decreased font size */
+        }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .photo {
+        margin: 10px;
+        flex: 0 1 calc(33.33% - 20px); /* Adjusted to show 3 photos in each row */
+        max-width: calc(33.33% - 20px); /* Adjusted to show 3 photos in each row */
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Add this CSS to center align the text in header and footer */
+    .header h1 {
+        margin: 0; /* To remove default margin */
+    }
+
+    .footer p {
+        margin: 0; /* To remove default margin */
+    }
+</style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Photo Gallery</h1>
+</header>
+
+<div class="container">
+    <!-- Replace the 'src' attributes with the actual addresses of your photos -->
+    <div class="photo">
+        <img src="./photo gallery/Andhra Pradesh/Amaravati/IMG-20240313-WA0035.jpg" alt="Photo 1">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0036.jpg" alt="Photo 2">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0037.jpg" alt="Photo 3">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0038.jpg" alt="Photo 4">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0039.jpg" alt="Photo 5">
+    </div>
+    <div class="photo">
+        <img src="file:///C:/Users/hp/OneDrive/Desktop/Divine%20Discoveries/photo%20gallery/Andhra%20Pradesh/Amaravati/IMG-20240313-WA0040.jpg" alt="Photo 6">
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-line"></div>
+    <p>Copyright © 2024 Divine Discoveries - All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
